@@ -1,0 +1,9 @@
+var geo = new GeoSearch();
+
+geo.baseUrl = 'https://www.google.com/search?';
+geo.lang = 'en';
+
+var url = geo.build({query:'Mountain bike', location:'New York'});
+
+console.log(url)
+// output: https://www.google.com/search?query=Mountain%20bike&uule=w+CAIQICIIbmV3IHlvcms&pws=0&hl=en
